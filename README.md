@@ -11,6 +11,16 @@ library(devtools)
 install_github("QingCheng0218/MR.LDP")
 ```
 
+If you have errors installing this package on Linux, try the following commands in R:
+```
+Sys.setlocale(category = "LC_ALL", locale = "English_United States.1252") 
+Sys.setenv(LANG="en_US.UTF-8")
+Sys.setenv(LC_ALL="en_US.UTF-8")
+
+library(devtools)
+install_github("QingCheng0218/MR.LDP")
+```
+
 Usage
 =========
 The ['MR.LDP' vignette](https://github.com/QingCheng0218/MR.LDP/blob/master/vignettes/MRLDP.pdf) will provide a good start point for two-sample Mendelian randomization analysis using **MR.LDP** package. 
